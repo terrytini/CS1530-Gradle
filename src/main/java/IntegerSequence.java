@@ -13,7 +13,7 @@ public class IntegerSequence{
     }
     else{
       try{
-        num = Integer.parseInt(args[1]);
+        n = Integer.parseInt(args[1]);
       }
       catch(NumberFormatException e){
         System.out.println("Input format: java IntegerSequence <lazy/triangle> <32-bit integer>");
