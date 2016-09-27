@@ -25,12 +25,11 @@ public class IntegerSequence{
     if(args[0].equals("triangle")) mode = 1;
     if(mode == 0){
       //run lazy
-      //answer = tri(n);
-      System.out.println(tri(n));
+	  System.out.println(lazy(n));  
     }
     else{
       //run triangle
-      System.out.println(lazy(n));
+	  System.out.println(tri(n));
     }
   } //end of main method
 
@@ -46,4 +45,4 @@ public class IntegerSequence{
       x = (n*n + n + 2) / 2;
       return x;
   }
-}
+}	//end of class
