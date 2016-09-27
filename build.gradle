@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'application'
 mainClassName = "IntegerSequence"
 
 repositories {
@@ -9,4 +10,7 @@ dependencies{
 	testCompile 'junit:junit:4.12'
 }
 
-
+run {
+	systemProperties System.getProperties()
+	args System.getProperty("args").split()
+}
