@@ -11,6 +11,27 @@ dependencies{
 }
 
 run {
-	systemProperties System.getProperties()
-	args System.getProperty("args").split()
+	try{
+		systemProperties System.getProperties()
+		args System.getProperty("args").split()
+	}
+	catch(Exception e){
+	}
+}
+
+test {
+	testLogging{
+		events 'started', 'passed'
+	}
+}
+
+task demo <<{
+	println 'Integer Sequence Demo'
+	int x = 0
+	(1..5).each {
+		println "Tri(${it}) = " + x
+	}
+	(1..5).each {
+		println "Lazy(${it}) = " + x
+	}
 }

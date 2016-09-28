@@ -1,6 +1,8 @@
+package tan_walsh_test;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
-import IntegerSequence;
+import tan_walsh.IntegerSequence;
 
 public class IntegerTriangleTest{
 	@Test

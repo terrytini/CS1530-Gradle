@@ -1,3 +1,4 @@
+package tan_walsh;
 import java.lang.NumberFormatException;
 
 public class IntegerSequence{
@@ -33,14 +34,14 @@ public class IntegerSequence{
     }
   } //end of main method
 
-  static int tri(int n){
+  public static int tri(int n){
       int x=0;
       for(int i=1; i<=n; i++){
         x += i;
       }
       return x;
   }
-  static int lazy(int n){
+  public static int lazy(int n){
       int x=0;
       x = (n*n + n + 2) / 2;
       return x;

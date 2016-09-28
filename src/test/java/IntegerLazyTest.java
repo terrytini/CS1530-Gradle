@@ -1,3 +1,5 @@
+package tan_walsh_test;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 import tan_walsh.IntegerSequence;
