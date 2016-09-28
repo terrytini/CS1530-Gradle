@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
-mainClassName = "IntegerSequence"
 import tan_walsh.*
+mainClassName = "tan_walsh.IntegerSequence"
 
 repositories {
 	mavenCentral()
@@ -17,6 +17,7 @@ run {
 		args System.getProperty("args").split()
 	}
 	catch(Exception e){
+
 	}
 }
 
